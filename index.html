@@ -1,26 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estrutura da landing page</title>
-
-    <link rel="stylesheet" href="./assets/css/styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
 <body>
-    <section class="main-bg">
-        <div class="main-content">
-            <h1>Estrutura da landing page</h1>
-           
-           <p>Essa é uma estrutura básica de uma landing page, com HTML e CSS.</p>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home">LOGO</a>
+      </h1>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#intro">Introdução</a></li>
+          <li><a href="#grid-one">Grade Um</a></li>
+          <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#grid-two">Grade Dois</a></li>
+          <li><a href="#pricing">Preços</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </aside>
+
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Criando uma Página com HTML, CSS e JavaScript</h2>
+        <p>HTML, CSS e JavaScript são as tecnologias fundamentais que formam a base da web, cada uma desempenhando um papel único no desenvolvimento de páginas e aplicativos web. Juntas, elas permitem criar experiências de usuário ricas e interativas. Vamos entender como cada uma contribui e como elas trabalham em conjunto e por fim criaremos um página Web simples como ponto de partida para quem está começando a explorar o desenvolvimento web.</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
+      </div>
+    </div>
+  </section>
+
+  <section id="intro" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>cobertura de notícias</h2>
+      <p>HTML (HyperText Markup Language)
+        O que é: O HTML é a espinha dorsal de qualquer página web. Ele é usado para estruturar e dar significado ao conteúdo web, como definir parágrafos, cabeçalhos, listas, links e elementos de mídia (imagens, vídeos, etc.).
+        Função: Serve como o esqueleto da página, determinando a estrutura e o conteúdo. Sem HTML, não haveria uma forma de organizar o texto ou os elementos numa página web.</p>
+      <p>CSS (Cascading Style Sheets)
+        O que é: CSS é usado para controlar a apresentação, o layout e o design de páginas web. Ele permite definir cores, fontes, espaçamentos, posicionamento de elementos e muito mais, sem alterar o conteúdo ou a estrutura fornecida pelo HTML.
+        Função: Proporciona estilo ao HTML. Com CSS, você pode transformar um documento HTML bruto em uma página visualmente atraente, melhorando a experiência do usuário.</p>
+      <p>JavaScript
+        O que é: JavaScript é uma linguagem de programação que permite adicionar interatividade e dinamismo às páginas web. Isso inclui coisas como responder a eventos de clique, enviar dados para um servidor sem recarregar a página, criar animações e muito mais.
+        Função: Torna as páginas web interativas e reativas. Com JavaScript, você pode modificar tanto o HTML quanto o CSS para atualizar a interface do usuário em resposta às ações do usuário, dados recebidos de servidores externos, e outros eventos.</p>
+    </div>
+  </section>
+
+
+  <section id="grid-one" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Minha Grade</h2>
+      <p class="grid-description">Como Elas Trabalham Juntas.</p>
+
+      <div class="grid">
+        <article>
+          <h3>Estrutura </h3>
+          <p>O processo começa com o HTML, que define a estrutura básica da página web.</p>
+        </article>
+        <article>
+          <h3>Estilo </h3>
+          <p>Em seguida, o CSS é aplicado para estilizar e posicionar os elementos definidos pelo HTML. O CSS pode ser incluído diretamente nas tags HTML, dentro de um elemento style no cabeçalho da página, ou em arquivos externos linkados ao documento HTML.</p>
+        </article>
+        <article>
+          <h3>Comportamento</h3>
+          <p>Por último, o JavaScript é usado para adicionar interatividade à página. Scripts JavaScript podem ser incluídos diretamente no HTML ou referenciados como arquivos externos. Eles podem manipular tanto o HTML quanto o CSS para atualizar a interface do usuário dinamicamente, baseado na interação do usuário ou em outros eventos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Gallery</h2>
+      <p class="grid-description">Uma breve descrição.</p>
+
+      <div class="grid">
+        <div class="gallery-img">
+          <img src="https://www.casadocodigo.com.br/cdn/shop/products/HTML5eCSS3_Facebook_large.jpg?v=1631720433" alt="random image from unsplash" />
         </div>
-    </section>     
-        
+        <div class="gallery-img">
+          <img src="https://m.media-amazon.com/images/I/61u7pEHMZUL._AC_UF1000,1000_QL80_.jpg" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://img.travessa.com.br/livro/GR/a8/a87b84af-6af9-47ed-80db-461357a57d9c.jpg" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://t3.ftcdn.net/jpg/10/28/78/58/360_F_1028785804_VnNUhCjHvcTVHaSPZgUwHowic4AG2KLP.jpg" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://img.freepik.com/psd-premium/ilustracao-3d-web-programacao-html-css-js_394084-544.jpg?w=360" alt="random image from unsplash" />
+        </div>
+        <div class="gallery-img">
+          <img src="https://m.media-amazon.com/images/I/7126GZ63gjL._AC_UF1000,1000_QL80_.jpg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="grid-two" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">My Grid</h2>
+      <p class="grid-description">O papel de cada uma na aplicação.</p>
+
+      <div class="grid">
+        <article>
+          <h3>HTML</h3>
+          <p>linguagem de marcação utilizada para estruturar os elementos da página, como parágrafos, links, títulos, tabelas, imagens e até vídeos.</p>
+        </article>
+        <article>
+          <h3>CSS</h3>
+          <p>linguagem de estilos utilizada para definir cores, fontes, tamanhos, posicionamento e qualquer outro valor estético para os elementos da página.</p>
+        </article>
+        <article>
+          <h3>Javascript</h3>
+          <p> linguagem de programação utilizada para deixar a página com mais movimento, podendo atualizar elementos dinamicamente e lidar melhor com dados enviados e recebidos na página.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Tente criar seu projeto</h2>
+      <p>Conforme você for ganhando mais conhecimento em relação a estrutura HTML e regras CSS, tente criar seu próprio projeto de maneira simples com todos os conhecimentos que foram obtidos seus em estudos. Além disso, você pode tentar criar algo que seja para atender uma necessidade sua ou de pessoas próximas, como por exemplo uma calculadora, fazendo com que você vá ganhando cada vez mais experiência.</p>
+      <p>Não se esqueça de optar por layouts mais dinâmicos, como por exemplo, retornar uma informação para a pessoa usuária, fazendo o uso da linguagem de programação Javascript para manipular essas informações.
+
+        Diante disso, sempre estar se atualizando com novas features e conteúdos que vêm sendo implementados é de grande importância, fazendo com que você possa ganhar cada vez mais experiência e conhecimento dentro da área escolhida.</p>
+
+      <div class="responsive-table">
+        <table>
+          <caption>Pricing table</caption>
+
+          <thead>
+            <tr>
+              <th>Title 1</th>
+              <th>Title 2</th>
+              <th>Title 3</th>
+              <th>Title 4</th>
+              <th>Title 5</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+            </tr>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+            </tr>
+            <tr>
+              <td>Content 1</td>
+              <td>Content 2</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+              <td>Content 3</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Testando</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Criando uma Página com HTML, CSS e JavaScript</h2>
+        <p>HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web.</p>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
+      </div>
+      <div class="contact-form">
+        <fieldset class="form-grid">
+          <legend>Contact me</legend>
+
+          <div class="form-group">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name" placeholder="Your name">
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">last name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Your e-mail">
+          </div>
+
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <button type="submit">Send message</button>
+          </div>
+        </fieldset>
+      </div>  
+    </div>
+  </section>
+
+
+  <footer id="footer" class="footer white-bg">
+    <p><a rel="nofollow" target="_blank" href="https://beacons.page/otaviomiranda">Feito com <span class="heart">❤</span> por Carla Correia</a></p>
+  </footer>
+
+  <a class="back-to-top" href="#">➤</a>
 </body>
+
 </html>
